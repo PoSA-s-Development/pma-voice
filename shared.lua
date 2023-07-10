@@ -34,10 +34,8 @@ if not IsDuplicityVersion() then
             Citizen.InvokeNative(0xAAA94D53, submixId, effectSlot)
         end
 
-        function SetAudioSubmixOutputVolumes(submixId, outputSlot, frontLeftVolume, frontRightVolume, rearLeftVolume,
-                                             rearRightVolume, channel5Volume, channel6Volume)
-            Citizen.InvokeNative(0x825DC0D1, submixId, outputSlot, frontLeftVolume, frontRightVolume, rearLeftVolume,
-                rearRightVolume, channel5Volume, channel6Volume)
+        function SetAudioSubmixOutputVolumes(submixId, outputSlot, frontLeftVolume, frontRightVolume, rearLeftVolume, rearRightVolume, channel5Volume, channel6Volume)
+            Citizen.InvokeNative(0x825DC0D1, submixId, outputSlot, frontLeftVolume, frontRightVolume, rearLeftVolume, rearRightVolume, channel5Volume, channel6Volume)
         end
     end
 end
